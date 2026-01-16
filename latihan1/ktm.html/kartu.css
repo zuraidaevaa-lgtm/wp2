@@ -1,0 +1,21 @@
+/* Untuk foto */
+.photo-wrap {
+  margin-top: 20px; /* Contoh: memindahkan foto 20px ke bawah */
+}
+
+/* Untuk logo */
+.logo-img {
+  width: 70px; /* Contoh: memperbesar lebar logo menjadi 70px */
+  height: auto;
+}
+
+/* Untuk teks UNIVERSITAS DHARMAS INDONESIA */
+.univ {
+  text-align: center; /* Memusatkan teks */
+}
+
+/* Untuk teks BERPACU WAKTU MENJAGA MUTU dan JAYALAH UNDHARI */
+.kartu-footer {
+  text-align: center; /* Memusatkan teks */
+  margin-top: 15px;
+}

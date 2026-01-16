@@ -1,0 +1,122 @@
+.container-kartu {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.kartu-mahasiswa {
+  width: 850px;
+  background: linear-gradient(135deg, #e8b4d9, #d88ec5);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #8b4580;
+}
+
+
+.kartu-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.logo-univ-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.teks-samping h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.teks-samping h2 {
+  margin: 2px 0 0 0;
+  font-size: 18px;
+}
+
+
+.alamat.tengah {
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid black;
+}
+
+.judul-kartu.tengah {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+
+.kartu-body {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-mahasiswa {
+  width: 60%;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.qr-code {
+  margin-top: 10px;
+  width: 120px;
+  padding: 8px;
+  background: white;
+}
+
+.qr-code img {
+  width: 100%;
+}
+
+.foto-mahasiswa img {
+  width: 180px;
+  height: 230px;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+
+.kartu-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tagline {
+  font-style: italic;
+}
+
+
+.watermark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.watermark img {
+  width: 300px;
+}

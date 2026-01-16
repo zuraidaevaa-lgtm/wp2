@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #5e5e8e;
+}
+
+.layout {
+  display: flex;
+}
+
+.kanan {
+  flex: 1;
+}
+
+.main {
+  padding: 20px;
+}
+
+.judul-halaman {
+  text-align: center;
+  margin-bottom: 25px;
+  color: rgb(190, 45, 45);
+}
+
+.container-kartu {
+  display: flex;
+  justify-content: center;
+}
