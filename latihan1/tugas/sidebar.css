@@ -1,0 +1,31 @@
+.sidebar {
+  width: 230px;
+  background: #713177;
+  height: 100vh;
+  color: white;
+  padding: 15px;
+}
+
+.profil {
+  text-align: center;
+}
+
+.profil img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background: #5a1465;
+}

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kartu Tanda Mahasiswa</title>
+
+<style>
+  :root{
+    --card-w: 600px;
+    --card-h: 350px;
+    --accent: rgba(0, 0, 0, 0.9);
+    --muted: rgba(0, 0, 0, 0.6);
+    --bg: #f3f6fb;
+    --paper: #ffffff;
+    --glass: rgba(255, 105, 180, 0.75);
+    --radius: 14px;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  body{
+    background: linear-gradient(180deg, var(--bg), rgba(243,0,141,1));
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+    box-sizing:border-box;
+  }
+
+  /* Card */
+  .ktm {
+    width: var(--card-w);
+    height: var(--card-h);
+    border-radius: var(--radius);
+    background: linear-gradient(90deg,rgba(255, 105, 180, 0.75) 55%,  rgba(255, 105, 180, 0.75) 55%);
+    box-shadow: 0 8px 20px rgba(228,100, 200,1);
+    display:flex;
+    padding:14px;
+    box-sizing:border-box;
+    overflow:hidden;
+    flex-direction: row;
+    position: relative; /* Tambahkan ini agar positioning absolute berfungsi */
+  }
+
+  /* LEFT SIDE */
+  .left{
+    width: 38%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    position:relative;
+    padding-top:6px;
+  }
+
+  .photo-wrap{
+    width: 75px;
+    height: 75px;    
+    border: 2px solid rgba(228, 0, 141, 1);
+    background: rgba(228, 0, 141, 1);
+    margin-top: 6px;
+}
+
+.photo-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* wajah tetap proporsional */
+    object-position: center; /* fokus di tengah wajah */
+}
+    .logo-img{
+        width: 50px;
+        height: auto;
+    }
+
+
+  .inst{
+    font-size:10px;
+    color:var(--muted);
+    text-align:center;
+    line-height:1.1;
+    margin-top:3px;
+  }
+
+  .right{
+    flex:1;
+    padding-left:10px; /* Changed padding to left */
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .top-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+  }
+
+  .univ{
+    font: size 90px;
+    font-weight:700;
+    color:var(--accent);
+    letter-spacing:0.2px;
+    margin-bottom:2px;
+  }
+
+  .dept{
+    font-size:15px;
+    color:var(--muted);
+  }
+
+  .meta{
+    font-size:15px;
+    margin-top:8px;
+    color:rgb(1, 0, 1);
+  }
+
+  .meta .label{
+    width: 70px;
+    font-weight:700;
+    display:inline-block;
+    font-size:15px;
+    color:var(--muted);
+  }
+
+  .bottom{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+  }
+
+  .barcode{
+    flex:1;
+    height:10px;
+    background: repeating-linear-gradient(
+      90deg,
+      rgba 0px,
+      rgba 2px,
+      transparent 2px,
+      transparent 5px
+    );
+    opacity:0.85;
+    border-radius:6px;
+    transform:scaleY(0.85);
+  }
+
+  /* Style untuk QR Code */
+  .qr-code {
+    width: 50px; /* Ubah sesuai ukuran yang diinginkan */
+    height: 50px; /* Ubah sesuai ukuran yang diinginkan */
+  }
+
+  .qr-code img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Style untuk Watermark Logo */
+  .watermark-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px; /* Sesuaikan ukuran logo */
+    height: auto;
+    opacity: 0.2; /* Sesuaikan tingkat transparansi */
+    z-index: 0; /* Pastikan di belakang konten lain */
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="ktm">
+    <img class="watermark-logo" src="logoundhari.png" alt="Watermark Logo">
+    <div class="right">
+      <div>
+        <div class="top-info">
+          <div>
+            <div class="univ">UNIVERSITAS DHARMAS INDONESIA</div>
+            <div class="dept">Fakultas Teknik — Program Studi Informatika</div>
+          </div>
+          <div class="chip"></div>
+        </div>
+
+        <div class="meta">
+          <div><span class="label">Nama</span> : EVA ZURAIDA</div>
+          <div><span class="label">NIM</span> : 2302011006</div>
+                    <div><span class="label">Jurusan</span> : S1 Informatika</div>
+
+          <div class="kartu-footer">
+            <p class="motto">BERPACU WAKTU MENJAGA MUTU</p>
+            <p class="tagline">JAYALAH UNDHARI</p>
+
+          <div class="qr-code">
+                <img src="QR.jpg" alt="QR Code">
+              </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <div class="left">
+          <img class="logo-img" src="logoundhari.png" alt="Logo Universitas">
+          <div class="photo-wrap">
+            <img src="foto.jpg" alt="Foto Mahasiswa">
+          </div>
+          <div class="inst">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
